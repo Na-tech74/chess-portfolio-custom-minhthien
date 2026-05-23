@@ -160,6 +160,7 @@ section {
   border-radius: 30px;
   transition: all 0.3s;
   box-shadow: 0 4px 15px rgba(255, 213, 79, 0.4);
+  touch-action: manipulation;
 }
 
 .hero .btn-warning:hover {
@@ -446,6 +447,7 @@ section {
   padding: 10px 25px;
   font-weight: 600;
   transition: all 0.3s;
+  touch-action: manipulation;
 }
 
 .btn-primary:hover {
@@ -539,6 +541,7 @@ section {
   z-index: 999;
   box-shadow: 0 5px 20px rgba(21,101,192,0.3);
   border: 3px solid rgba(255,255,255,0.2);
+  touch-action: manipulation;
 }
 
 .back-to-top.active {
@@ -580,6 +583,9 @@ section {
 @media (max-width: 768px) {
   section { padding: 70px 0; }
 
+  .hero-col { min-height: auto; padding: 2rem !important; }
+  .hero-col-right { padding-top: 0 !important; }
+
   .hero h1 { font-size: 2rem; }
   .hero h2 { font-size: 1.5rem; }
 
@@ -601,9 +607,32 @@ section {
   }
 
   .section-title { font-size: 1.6rem; }
+
+  .card-img-top { height: 180px; }
+
+  .contact-form { padding: 25px; }
+
+  .floating-piece { display: none !important; }
+
+  .hero .social-icons a {
+    width: 42px;
+    height: 42px;
+    font-size: 1.2rem;
+    margin: 0 8px;
+  }
+
+  #about::before { font-size: 8rem; }
+
+  .avatar-wrapper::before {
+    font-size: 2rem;
+    top: -10px;
+    right: 0;
+  }
 }
 
 @media (max-width: 576px) {
+  section { padding: 55px 0; }
+
   .about-avatar {
     max-width: 220px;
     height: 220px;
@@ -611,4 +640,42 @@ section {
 
   .hero h1 { font-size: 1.6rem; }
   .hero h2 { font-size: 1.2rem; }
+
+  .hero .lead { font-size: 1rem; }
+
+  .section-title {
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+  }
+
+  .contact-form { padding: 20px; }
+
+  .card-img-top { height: 160px; }
+
+  .card-body { padding: 18px; }
+
+  .progress { height: 20px; }
+  .progress-bar { font-size: 0.7rem; line-height: 20px; }
+
+  .timeline-item {
+    padding-left: 55px;
+    padding-right: 15px;
+  }
+
+  .timeline-content { padding: 18px 20px; }
+}
+
+@media (max-width: 400px) {
+  .hero-col { padding: 1.5rem !important; }
+
+  .hero h1 { font-size: 1.4rem; }
+  .hero h2 { font-size: 1rem; }
+
+  .about-avatar {
+    max-width: 180px;
+    height: 180px;
+  }
+
+  .section-title { font-size: 1.1rem; }
 }

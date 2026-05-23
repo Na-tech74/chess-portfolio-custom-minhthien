@@ -164,6 +164,9 @@
   transition: all 0.3s;
   z-index: 1001;
   border: 2px solid rgba(255,255,255,0.15);
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
 }
 
 .menu-toggle:hover {
@@ -233,6 +236,7 @@
   transition: all 0.3s;
   border-radius: 12px;
   font-weight: 500;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .nav-link i {
@@ -345,6 +349,22 @@
     width: 250px;
     height: 250px;
   }
+
+  .logo h1 { font-size: 1.1rem; }
+
+  .logo i { font-size: 1.6rem; }
+
+  .header-container { padding: 10px 15px; }
+
+  .mobile-nav { max-width: 280px; padding: 80px 20px 20px; }
+
+  .nav-link { font-size: 0.95rem; padding: 12px 12px; }
+
+  .avatar-container::before {
+    font-size: 3rem;
+    bottom: -5px;
+    right: 10px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -352,5 +372,39 @@
     width: 200px;
     height: 200px;
     border-width: 4px;
+  }
+
+  .header-container { padding: 8px 12px; }
+
+  .logo h1 { font-size: 1rem; }
+
+  .logo i { font-size: 1.4rem; margin-right: 8px; }
+
+  .menu-toggle { width: 36px; height: 36px; font-size: 1.2rem; }
+
+  .nav-link { font-size: 0.9rem; padding: 10px 12px; }
+
+  .nav-link i { font-size: 0.95rem; margin-right: 10px; }
+
+  .mobile-nav { max-width: 260px; padding: 70px 15px 15px; }
+
+  .avatar-container::before {
+    font-size: 2.2rem;
+    bottom: 0;
+    right: 5px;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero-img.avatar {
+    width: 160px;
+    height: 160px;
+    border-width: 3px;
+  }
+
+  .avatar-container::before {
+    font-size: 1.8rem;
+    bottom: 0;
+    right: 0;
   }
 }
