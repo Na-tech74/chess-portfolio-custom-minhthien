@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="keywords" content="MinhThien, chess, cờ vua, coach cờ vua, portfolio cờ vua, chess content" />
+  <meta name="description"
+    content="MinhThien — Chess player, coach và content creator. Tactics, openings, game analysis và chess projects." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- AOS Animation -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/header.css">
+  <link rel="stylesheet" href="./assets/css/footer.css">
+  <link rel="icon" href="./assets/img/favicon.ico" type="image/x-icon">
+
+    <title>LienChess | MinhThien — Chess Coach Portfolio</title>
+
+</head>
+
+<body oncontextmenu="return false">
+
+  <!--  Header -->
+  <!-- Desktop Header -->
+  <header class="navbar navbar-expand-lg navbar-dark fixed-top desktop-header">
+    <div class="container">
+      <a class="navbar-brand" href="#home">
+        <i class="fas fa-chess-knight"></i> LienChess
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+          <i class="fas fa-bars"></i>
+        </span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home"><i class="fas fa-chess-king"></i> Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about"><i class="fas fa-chess-knight"></i> About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills"><i class="fas fa-chess-bishop"></i> Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#education"><i class="fas fa-chess-rook"></i> Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects"><i class="fas fa-chess-queen"></i> Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience"><i class="fas fa-chess-pawn"></i> Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact"><i class="fas fa-chess-board"></i> Contact</a>
+            </li>
+          </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Header -->
+  <header class="header-mobile">
+    <div class="header-container">
+      <a href="#home" class="logo">
+        <i class="fas fa-chess-knight"></i>
+        <h1>LienChess</h1>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle">
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation Menu -->
+    <nav class="mobile-nav" id="mobileNav">
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a href="#home" class="nav-link active">
+            <i class="fas fa-chess-king"></i> Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#about" class="nav-link">
+            <i class="fas fa-chess-knight"></i> About
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#skills" class="nav-link">
+            <i class="fas fa-chess-bishop"></i> Skills
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#education" class="nav-link">
+            <i class="fas fa-chess-rook"></i> Education
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#projects" class="nav-link">
+            <i class="fas fa-chess-queen"></i> Projects
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#experience" class="nav-link">
+            <i class="fas fa-chess-pawn"></i> Experience
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link">
+            <i class="fas fa-chess-board"></i> Contact
+          </a>
+        </li>
+      </ul>
+
+      <div class="mobile-social">
+        <a href="https://www.facebook.com/tonminhthien2003" class="social-icon">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.youtube.com/channel/UC1234567890" class="social-icon">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://www.instagram.com/tonminhthien2003" class="social-icon">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/tmt2003hr/" class="social-icon">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </nav>
+
+    <!-- Overlay for closing menu when clicking outside -->
+    <div class="mobile-nav-overlay" id="navOverlay"></div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero d-flex align-items-center" id="home">
+    <div class="hero-bg"></div>
+    <div class="container-fluid hero-content">
+      <div class="row">
+        <!-- Left (70%) -->
+        <div class="col-lg-7 d-flex flex-column justify-content-center text-white p-5" style="min-height:100vh;"
+          data-aos="fade-right">
+          <h1 class="fw-bold mb-3">Hi There,</h1>
+          <h2 class="fw-bold mb-3">I'm <span id="typed-text"></span></h2>
+          <p class="lead mb-4"><i class="fas fa-chess-knight"></i> Chess Coach & Minh Thiện <i class="fas fa-chess-queen"></i></p>
+          <p class="mb-4">Chuyên gia huấn luyện cờ vua với hơn 8 năm kinh nghiệm. Sáng tạo nội dung cờ vua hấp dẫn và dễ
+            hiểu cho mọi đối tượng.</p>
+          <a href="#about" class="btn btn-warning btn-lg mt-3 align-self-start">About Me</a>
+
+          <!-- Social Icons -->
+          <div class="social-icons mt-4">
+            <a href="https://www.linkedin.com/in/tmt2003hr/" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/tonminhthien2003" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.youtube.com/channel/UC1234567890" class="social-icon"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.twitter.com/tonminhthien2003" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/tonminhthien2003" class="social-icon"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <!-- Right (30%) -->
+        <div class="col-lg-5 d-flex justify-content-center align-items-center p-5" style="min-height:100vh;"
+          data-aos="fade-left">
+          <div class="avatar-container">
+            <img src="./assets/image/avatar-header.png" alt="Chess Illustration" class="img-fluid hero-img avatar">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="bg-light">
+    <div class="chess-bg chess-bg-pattern"></div>
+    <div class="container" data-aos="fade-up">
+      <h2 class="section-title text-center">About Me</h2>
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4" data-aos="fade-right">
+          <div class="avatar-wrapper">
+            <img src="assets/image/avatar-about.jpg" alt="Minh Thien" class="img-fluid about-avatar">
+          </div>
+        </div>
+        <div class="col-md-6" data-aos="fade-left">
+          <h3 class="mb-3">Minh Thien - Chess Enthusiast</h3>
+          <p>Xin chào, mình là <b>Minh Thien</b> — một chess coach, content creator, yêu thích chiến lược và sáng tạo
+            nội dung về cờ vua. Mình đã có nhiều năm kinh nghiệm thi đấu, huấn luyện, và xây dựng cộng đồng cờ vua trực
+            tuyến.</p>
+          <p>Với niềm đam mê mãnh liệt dành cho cờ vua, tôi đã giúp hàng trăm học viên cải thiện kỹ năng và phát triển
+            tư duy chiến lược. Phương pháp giảng dạy của tôi kết hợp giữa lý thuyết và thực hành, giúp học viên nhanh
+            chóng tiến bộ.</p>
+          <div class="row mt-4">
+            <div class="col-sm-6">
+              <ul class="list-unstyled">
+                <li><strong>Tuổi:</strong> 22</li>
+                <li><strong>Thành phố:</strong> Hồ Chí Minh</li>
+                <li><strong>Email:</strong> minhthien@lienchess.com</li>
+              </ul>
+            </div>
+            <div class="col-sm-6">
+              <ul class="list-unstyled">
+                <li><strong>Elo:</strong> 2200+</li>
+                <li><strong>Kinh nghiệm:</strong> 5+ năm</li>
+                <li><strong>Học viên:</strong> 500+</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <div class="chess-bg chess-bg-pattern" style="opacity:0.02"></div>
+    <div class="container" data-aos="zoom-in">
+      <h2 class="section-title text-center">Skills</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="mb-4">
+            <div class="d-flex justify-content-between mb-2">
+              <label class="fw-bold"><i class="fas fa-chess-knight"></i> Openings & Tactics</label>
+              <span>90%</span>
+            </div>
+            <div class="progress">
+              <div class="progress-bar bg-success" style="width: 0%" data-width="90%"></div>
+            </div>
+          </div>
+          <div class="mb-4">
+            <div class="d-flex justify-content-between mb-2">
+              <label class="fw-bold"><i class="fas fa-chess-board"></i> Game Analysis</label>
+              <span>85%</span>
+            </div>
+            <div class="progress">
+              <div class="progress-bar bg-info" style="width: 0%" data-width="85%"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="mb-4">
+            <div class="d-flex justify-content-between mb-2">
+              <label class="fw-bold"><i class="fas fa-chess-queen"></i> Chess Coaching</label>
+              <span>95%</span>
+            </div>
+            <div class="progress">
+              <div class="progress-bar bg-warning" style="width: 0%" data-width="95%"></div>
+            </div>
+          </div>
+          <div class="mb-4">
+            <div class="d-flex justify-content-between mb-2">
+              <label class="fw-bold"><i class="fas fa-video"></i> Content Creation</label>
+              <span>80%</span>
+            </div>
+            <div class="progress">
+              <div class="progress-bar bg-danger" style="width: 0%" data-width="80%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="bg-light">
+    <div class="chess-bg chess-bg-pattern"></div>
+    <div class="container" data-aos="fade-up">
+      <h2 class="section-title text-center">Education</h2>
+      <div class="timeline">
+        <div class="timeline-item left" data-aos="fade-right">
+          <div class="timeline-content">
+            <h4><i class="fas fa-chess-queen"></i> Học viên Cờ vua Quốc tế</h4>
+            <p class="text-muted">2015</p>
+            <p>Hoàn thành khóa đào tạo chuyên sâu về lý thuyết và thực hành cờ vua quốc tế.</p>
+          </div>
+        </div>
+        <div class="timeline-item right" data-aos="fade-left">
+          <div class="timeline-content">
+            <h4><i class="fas fa-chess-king"></i> Chứng chỉ Huấn luyện viên Cờ vua nâng cao</h4>
+            <p class="text-muted">2018</p>
+            <p>Được cấp bởi Liên đoàn Cờ vua Việt Nam, chuyên về phương pháp huấn luyện hiện đại.</p>
+          </div>
+        </div>
+        <div class="timeline-item left" data-aos="fade-right">
+          <div class="timeline-content">
+            <h4><i class="fas fa-chess-rook"></i> Khóa học về Tâm lý học thể thao</h4>
+            <p class="text-muted">2020</p>
+            <p>Nghiên cứu về tâm lý thi đấu và phương pháp rèn luyện tư duy chiến lược.</p>
+          </div>
+        </div>
+        <div class="timeline-item right" data-aos="fade-left">
+          <div class="timeline-content">
+            <h4><i class="fas fa-chess-knight"></i> Chuyên gia Phân tích Dữ liệu Cờ vua</h4>
+            <p class="text-muted">2023</p>
+            <p>Ứng dụng công nghệ và AI trong phân tích và cải thiện kỹ năng chơi cờ.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <div class="chess-bg chess-bg-pattern" style="opacity:0.02"></div>
+    <div class="container" data-aos="fade-up">
+      <h2 class="section-title text-center">Projects</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card shadow">
+            <img
+              src="assets/image/project2.jpg"
+              class="card-img-top" alt="Project 1">
+            <div class="card-body">
+              <h5 class="card-title">Online Chess Course</h5>
+              <p class="card-text">Khóa học cờ vua trực tuyến cho người mới bắt đầu với hệ thống bài giảng chi tiết và
+                bài tập thực hành.</p>
+              <a href="#" class="btn btn-primary">Xem chi tiết</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="card shadow">
+            <img
+              src="assets/image/avatar-project3.jpg"
+              class="card-img-top" alt="Project 2">
+            <div class="card-body">
+              <h5 class="card-title">Chess Analysis App</h5>
+              <p class="card-text">Ứng dụng phân tích ván đấu và gợi ý chiến thuật dựa trên AI và dữ liệu lớn.</p>
+              <a href="#" class="btn btn-primary">Xem chi tiết</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="card shadow">
+            <img
+              src="assets/image/avatar-project1.jpg"
+              class="card-img-top" alt="Project 3">
+            <div class="card-body">
+              <h5 class="card-title">YouTube Chess Channel</h5>
+              <p class="card-text">Kênh chia sẻ video hướng dẫn và bình luận trận đấu với hơn 50k subscribers.</p>
+              <a href="#" class="btn btn-primary">Xem chi tiết</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="bg-light">
+    <div class="chess-bg chess-bg-pattern"></div>
+    <div class="container" data-aos="fade-up">
+      <h2 class="section-title text-center">Experience</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card text-center h-100">
+            <div class="card-body">
+              <div class="mb-3">
+                <i class="fas fa-chess-knight fa-3x"></i>
+              </div>
+              <h5 class="card-title">Huấn luyện viên Cờ vua</h5>
+              <p class="text-muted">CLB XYZ (2017–2020)</p>
+              <p class="card-text">Huấn luyện đội tuyển cờ vua với nhiều thành tích cao trong các giải đấu khu vực và
+                quốc gia.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="card text-center h-100">
+            <div class="card-body">
+              <div class="mb-3">
+                <i class="fas fa-chess-queen fa-3x"></i>
+              </div>
+              <h5 class="card-title">Content Creator</h5>
+              <p class="text-muted">Chess Network (2020–2023)</p>
+              <p class="card-text">Sáng tạo nội dung cờ vua đa dạng, thu hút hàng triệu lượt xem và xây dựng cộng đồng
+                yêu cờ.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="card text-center h-100">
+            <div class="card-body">
+              <div class="mb-3">
+                <i class="fas fa-chess-king fa-3x"></i>
+              </div>
+              <h5 class="card-title">Founder</h5>
+              <p class="text-muted">Cộng đồng học cờ online (2024–nay)</p>
+              <p class="card-text">Sáng lập và phát triển cộng đồng học cờ trực tuyến với hơn 10.000 thành viên tích
+                cực.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="chess-bg chess-bg-pattern" style="opacity:0.02"></div>
+    <div class="container" data-aos="fade-up">
+      <h2 class="section-title text-center">Contact</h2>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="contact-form">
+            <form id="contactForm">
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="name" class="form-label">Tên</label>
+                  <input type="text" class="form-control" id="name" placeholder="Nhập tên của bạn" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="Nhập email của bạn" required>
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="subject" class="form-label">Chủ đề</label>
+                <input type="text" class="form-control" id="subject" placeholder="Nhập chủ đề" required>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Tin nhắn</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Nhập tin nhắn..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-lg w-100">Gửi tin nhắn</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-section">
+    <div class="footer-top-border"></div>
+    <div class="container">
+      <!-- Main Footer Content -->
+      <div class="row">
+        <!-- Brand & Description -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="footer-brand">
+            <h3><i class="fas fa-chess-knight"></i> LienChess</h3>
+            <p class="footer-desc">Nơi đam mê cờ vua được thắp sáng — kết nối, học hỏi và phát triển cùng cộng đồng cờ vua Việt Nam.</p>
+            <div class="footer-newsletter">
+              <h5><i class="fas fa-chess-pawn"></i> Đăng ký nhận tin</h5>
+              <div class="input-group">
+                <input type="email" class="form-control" placeholder="Email của bạn">
+                <button class="btn btn-primary" type="button"><i class="fas fa-chess-king"></i> Gửi</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-lg-2 col-md-6 mb-4">
+          <h5>Liên kết nhanh</h5>
+          <ul class="footer-links">
+            <li><a href="#home"><i class="fas fa-chess-pawn"></i> Trang chủ</a></li>
+            <li><a href="#about"><i class="fas fa-chess-knight"></i> Giới thiệu</a></li>
+            <li><a href="#skills"><i class="fas fa-chess-bishop"></i> Kỹ năng</a></li>
+            <li><a href="#projects"><i class="fas fa-chess-rook"></i> Dự án</a></li>
+            <li><a href="#contact"><i class="fas fa-chess-queen"></i> Liên hệ</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5>Dịch vụ</h5>
+          <ul class="footer-links">
+            <li><a href="#"><i class="fas fa-chess-knight"></i> Huấn luyện cá nhân</a></li>
+            <li><a href="#"><i class="fas fa-chess-king"></i> Lớp học nhóm</a></li>
+            <li><a href="#"><i class="fas fa-chess-board"></i> Phân tích ván đấu</a></li>
+            <li><a href="#"><i class="fas fa-chess-rook"></i> Tài liệu cờ vua</a></li>
+            <li><a href="#"><i class="fas fa-trophy"></i> Tổ chức giải đấu</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5>Thông tin liên hệ</h5>
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Quận 1, TP. Hồ Chí Minh, Việt Nam</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <span>+84 123 456 789</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>minhthien@lienchess.com</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-clock"></i>
+              <span>Thứ 2 - Thứ 6: 8:00 - 18:00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Social Media & Copyright -->
+      <div class="footer-bottom">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div class="social-icons">
+              <a href="#" class="social-icon" title="Facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon" title="YouTube">
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a href="#" class="social-icon" title="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="social-icon" title="Twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon" title="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <p class="copyright">&copy; 2026 <strong>Minh Thien | Chess Portfolio</strong>. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Typed.js -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <!-- AOS.js -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script defer src="./js/index.js"></script>
+  <script>
+    // Typed animation
+    document.addEventListener("DOMContentLoaded", function () {
+      new Typed("#typed-text", {
+        strings: ["Minh Thiện", "a Chess Coach", "a Content Creator", "a Chess Analyst"],
+        typeSpeed: 70,
+        backSpeed: 40,
+        backDelay: 1500,
+        loop: true
+      });
+
+      // AOS init
+      AOS.init({
+        duration: 1000,
+        once: true
+      });
+    });
+
+  </script>
+</body>
+
+</html>
